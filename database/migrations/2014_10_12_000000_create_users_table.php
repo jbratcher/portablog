@@ -33,4 +33,10 @@ class CreateUsersTable extends Migration
     {
         Schema::dropIfExists('users');
     }
+
+    // many users to many roles
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
 }
