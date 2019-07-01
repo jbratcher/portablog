@@ -7,7 +7,7 @@ import Create from './components/Create'
 import Read from './components/Read'
 import Update from './components/Update'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const router = new VueRouter({
     mode: 'history',
