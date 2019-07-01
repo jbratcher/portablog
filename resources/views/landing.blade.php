@@ -1,7 +1,7 @@
-{{-- File: ./resources/views/landing.blade.php --}}
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('content')
+
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-8 mx-auto">
@@ -25,4 +25,5 @@
             </div>
         </div>
     </div>
+
 @endsection
