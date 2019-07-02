@@ -7,6 +7,28 @@ html, body {
     overflow: hidden;
 }
 
+.post-container {
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    p.post-title {
+        margin: 0;
+    }
+
+    button {
+        padding: 0.25rem;
+        margin: 0;
+    }
+
+    a:first-of-type {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+}
+
 a {
     color: white;
 }
