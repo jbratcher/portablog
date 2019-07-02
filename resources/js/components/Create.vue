@@ -26,7 +26,7 @@
             </div>
 
             <div class="custom-file mb-3">
-                <input type="file" ref="image" name="image" class="custom-file-input" id="image" required>
+                <input type="file" ref="image" name="image" class="custom-file-input" id="image">
                 <label class="custom-file-label" >Choose file...</label>
             </div>
 

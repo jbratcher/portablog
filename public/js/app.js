@@ -2035,6 +2035,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.getPosts();
@@ -37531,7 +37535,7 @@ var render = function() {
         _c("input", {
           ref: "image",
           staticClass: "custom-file-input",
-          attrs: { type: "file", name: "image", id: "image", required: "" }
+          attrs: { type: "file", name: "image", id: "image" }
         }),
         _vm._v(" "),
         _c("label", { staticClass: "custom-file-label" }, [
@@ -37651,15 +37655,18 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "section",
     { attrs: { id: "posts" } },
     [
       _vm._l(_vm.posts, function(post) {
         return _c(
-          "p",
-          { staticClass: "border p-3" },
+          "section",
+          { staticClass: "post-container" },
           [
-            _vm._v("\n        " + _vm._s(post.title) + "\n        "),
+            _c("p", { staticClass: "post-title" }, [
+              _vm._v(_vm._s(post.title))
+            ]),
+            _vm._v(" "),
             _c(
               "router-link",
               {
@@ -37668,28 +37675,27 @@ var render = function() {
               [
                 _c(
                   "button",
-                  {
-                    staticClass: "p-1 mx-3 float-right btn btn-light",
-                    attrs: { type: "button" }
-                  },
+                  { staticClass: "btn btn-light", attrs: { type: "button" } },
                   [_vm._v("\n                Update\n            ")]
                 )
               ]
             ),
             _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "p-1 mx-3 float-right btn btn-danger",
-                attrs: { type: "button" },
-                on: {
-                  click: function($event) {
-                    return _vm.deletePost(post.id)
+            _c("a", { attrs: { href: "#" } }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-danger",
+                  attrs: { type: "button" },
+                  on: {
+                    click: function($event) {
+                      return _vm.deletePost(post.id)
+                    }
                   }
-                }
-              },
-              [_vm._v("\n            Delete\n        ")]
-            )
+                },
+                [_vm._v("\n                Delete\n            ")]
+              )
+            ])
           ],
           1
         )

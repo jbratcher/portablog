@@ -1,21 +1,24 @@
 <template>
 
-    <div id="posts">
-        <p class="border p-3" v-for="post in posts">
-            {{ post.title }}
+    <section id="posts">
+
+        <section class="post-container" v-for="post in posts">
+
+            <p class="post-title">{{ post.title }}</p>
+
             <router-link :to="{ name: 'update', params: { postId : post.id } }">
-                <button type="button" class="p-1 mx-3 float-right btn btn-light">
+                <button type="button" class="btn btn-light">
                     Update
                 </button>
             </router-link>
-            <button
-                    type="button"
-                    @click="deletePost(post.id)"
-                    class="p-1 mx-3 float-right btn btn-danger"
-            >
-                Delete
-            </button>
-        </p>
+            <a href="#">
+                <button type="button" @click="deletePost(post.id)" class="btn btn-danger">
+                    Delete
+                </button>
+            </a>
+
+        </section>
+
         <div>
             <button
                     v-if="next"
@@ -34,7 +37,8 @@
                 Previous
             </button>
         </div>
-    </div>
+
+    </section>
 
 </template>
 
