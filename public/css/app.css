@@ -11113,8 +11113,12 @@ body {
   overflow-x: hidden;
 }
 
-#app {
-  padding: 10vh 0;
+#app div.row {
+  margin: 0.5rem 0;
+}
+
+#app div.row > * {
+  margin: 0.125rem;
 }
 
 i.fas {

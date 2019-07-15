@@ -17,3 +17,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'PostController@all');
 
 Route::get('/admin/{any}', 'AdminController@index')->where('any', '.*');
+
+Route::get('/admin/{any}', 'AdminController@index')->where('any', '.*');
+
+Route::get('/projects', 'ProjectsController@index')->name("projects");

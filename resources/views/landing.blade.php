@@ -5,14 +5,14 @@
     <div class="container">
 
         <div class="row align-items-center">
-            <div class="col-md-8 mx-auto mt-3 mt-lg-5 text-center">
+            <div class="col-md-8 mx-auto text-center">
                 Full stack web developer based in Louisville, KY, USA
             </div>
         </div>
 
         <div class="row align-items-center">
-            <div class="col-md-8 mx-auto my-3 text-center">
-                <a href="#top">
+            <div class="col-md-8 mx-auto text-center">
+                <a href="/projects">
                     <button type="button" class="btn btn-outline-dark">
                         Projects
                     </button>
@@ -48,6 +48,7 @@
 
             </div>
         </div>
+
     </div>
 
 @endsection
