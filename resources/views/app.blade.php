@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Jeremy Bratcher">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script> window.Laravel = { csrfToken: 'csrf_token() ' } </script>
     <title>Jeremy Bratcher, Web Developer</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300|Lato:300,400,600,700|Roboto+Condensed:300,700|Open+Sans+Condensed:300,600|Open+Sans:400,300,600,700|Maven+Pro:400,700">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -51,7 +53,7 @@
     </nav>
 
     <div id="app">
-        @yield('content')
+        <App></App>
     </div>
 
     <footer class="py-2 bg-dark">

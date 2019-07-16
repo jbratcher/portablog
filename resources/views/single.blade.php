@@ -1,5 +1,5 @@
 {{-- File: ./resources/views/single.blade.php --}}
-@extends('layouts.app')
+@extends('app')
 
 @section('content')
     <div class="container">
